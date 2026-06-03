@@ -10,40 +10,38 @@ export class StudentService {
 
   StdArr : Array<IStd>  = [
       {
-
-            fname: "may",
-            lname: "Doe",
-            email: "May@gmail.com",
-            contact: "9876543210",
-            stdId: '123',
-            isActive: true
-        },
-        {
-            fname: "Snehal",
-            lname: "Patil",
-            email: "snehal.patil@gmail.com",
-            contact: "9123456780",
-            stdId: '124',
-            isActive: false
-        },
-        {
-
-            fname: "june",
-            lname: "Doe",
-            email: "june@gmail.com",
-            contact: "9988776655",
-            stdId: '125',
-            isActive: true
-        },
-        {
-
-            fname: "Rocky",
-            lname: "sharma",
-            email: "Rocky@gmail.com",
-            contact: "9012345678",
-            stdId: '126',
-            isActive: false
-        }
+          fname: "Aarav",
+          lname: "Kulkarni",
+          email: "aarav.kulkarni@gmail.com",
+          contact: "9876123450",
+          stdId: "201",
+          isActive: true
+      },
+      {
+          fname: "Priya",
+          lname: "Deshmukh",
+          email: "priya.deshmukh@gmail.com",
+          contact: "9123987654",
+          stdId: "202",
+          isActive: false
+      },
+      {
+          fname: "Rohan",
+          lname: "Joshi",
+          email: "rohan.joshi@gmail.com",
+          contact: "9988123456",
+          stdId: "203",
+          isActive: true
+      },
+      {
+          fname: "Neha",
+          lname: "Shinde",
+          email: "neha.shinde@gmail.com",
+          contact: "9012678453",
+          stdId: "204",
+          isActive: false
+      }
+  
     ];
   constructor() { }
 
