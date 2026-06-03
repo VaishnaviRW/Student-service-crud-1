@@ -1,0 +1,37 @@
+<mat-card>
+    <div class="card-body table-responsive">
+        <table class="table table-bordered" *ngIf="StdArr.length > 0 ; else nostd">
+            <thead>
+                <tr>
+                    <th>Sr.No</th>
+                    <th>first Name</th>
+                    <th>Last Name</th>
+                    <th>Email</th>
+                    <th>Is Active</th>
+                    <th>Contact</th>
+                    <th>Edit</th>
+                    <th>Remove</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor=" let std  of StdArr; let i = index; trackBy : trackByfun ">
+                    <td>{{i + 1}}</td>
+                    <td>{{std.fname}}</td>
+                    <td>{{std.lname}}</td>
+                    <td>{{std.email}}</td>
+                    <td>{{std.isActive ? 'Yes' : 'No'}}</td>
+                    <td>{{std.contact}}</td>
+                    <td>
+                        <button (click)="onEdit(std)" mat-mini-fab color="primary"><mat-icon>edit</mat-icon></button>
+                    </td>
+                    <td>
+                         <button (click)="onRemove(std.stdId)" mat-mini-fab color="warn"><mat-icon>delete</mat-icon></button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <ng-template #nostd>
+            <p class="alert alert-info">No Added Student Yet !!</p>
+        </ng-template>
+    </div>
+</mat-card>
